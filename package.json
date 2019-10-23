@@ -4,44 +4,11 @@
     "description": "A simple and reliable webpack starter kit for your web adventures needs.",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "webpack-dev-server --config webpack.dev.js --mode development",
+        "start": "node_modules/.bin/webpack-dev-server --config webpack.dev.js --mode development",
         "build": "webpack --config webpack.prod.js --mode production",
-        "preview": "npm run build && http-server dist",
-        "kickstart": "node kickstarter"
+        "preview": "npm run build && http-server dist"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/lifenautjoe/webpack-starter-basic.git"
-    },
-    "keywords": [
-        "webpack4",
-        "webpack",
-        "starter",
-        "starter-kit",
-        "kit",
-        "webpack",
-        "seed",
-        "webpack-seed",
-        "webpack4-seed",
-        "webpack4-boilerplate",
-        "boilerplate",
-        "javascript",
-        "js",
-        "es6",
-        "es6-starter",
-        "js-starter",
-        "es6-starter-kit"
-    ],
-    "author": "Joel Hernandez",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/lifenautjoe/webpack-starter-basic/issues"
-    },
-    "homepage": "https://github.com/lifenautjoe/webpack-starter-basic#readme",
-    "dependencies": {
-        "normalize.css": "^8.0.0"
-    },
+    "dependencies": {},
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "^1.1.0",
         "ajv": "^6.3.0",
@@ -69,9 +36,5 @@
         "webpack": "^4.20.2",
         "webpack-cli": "^3.1.1",
         "webpack-dev-server": "^3.1.11"
-    },
-    "kickstartDependencies": [
-        "inquirer",
-        "rimraf"
-    ]
+    }
 }
