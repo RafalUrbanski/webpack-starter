@@ -1,7 +1,7 @@
 {
-    "name": "webpack-starter-basic",
-    "version": "2.0.0",
-    "description": "A simple and reliable webpack starter kit for your web adventures needs.",
+    "name": "webpack-starter",
+    "version": "1.0.0",
+    "description": "A simple and reliable webpack starter kit.",
     "main": "index.js",
     "scripts": {
         "start": "node_modules/.bin/webpack-dev-server --config webpack.dev.js --mode development",
@@ -9,15 +9,17 @@
         "preview": "npm run build && http-server dist"
     },
     "dependencies": {
-        "jquery": "^3.4.1"
+        "@babel/polyfill": "^7.6.0"
     },
     "devDependencies": {
         "autoprefixer": "^9.3.1",
         "@babel/core": "^7.5.5",
         "@babel/plugin-proposal-class-properties": "^7.5.5",
         "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+        "@babel/plugin-transform-object-assign": "^7.2.0",
         "@babel/preset-env": "^7.5.5",
         "@babel/preset-typescript": "^7.3.3",
+        "awesome-typescript-loader": "^5.2.1",
         "babel-loader": "^8.0.6",
         "clean-webpack-plugin": "^0.1.19",
         "css-loader": "^0.28.11",
@@ -31,6 +33,7 @@
         "sass-loader": "^6.0.7",
         "source-map-loader": "^0.2.3",
         "style-loader": "^0.20.3",
+        "typescript": "^3.6.4",
         "url-loader": "^1.0.1",
         "webpack": "^4.20.2",
         "webpack-cli": "^3.1.1",
