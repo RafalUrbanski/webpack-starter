@@ -11,9 +11,9 @@ module.exports = {
         port: 8080,
         contentBase: path.join(__dirname, "dist")
     },
-    // node: {
-    //     fs: 'empty'
-    // },
+    resolve: {
+        extensions: ['.ts', '.tsx', '.js']
+    },
     module: {
         rules: [{
             test: /\.js$/,
